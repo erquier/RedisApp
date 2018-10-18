@@ -102,9 +102,11 @@ public class AppHib {
 //            if(jedis.hget(obj,"Customer")!= null
 //                    && jedis.hget(obj,"Customer").contains("NICHOLAS BARFIELD")){
 //
-//                NicholasBarfieldRentalHistory.add(jedis.hget(obj,"Title") + "  Rental Date: "+ jedis.hget(obj,"RentalDate"));
+//                NicholasBarfieldRentalHistory.add(jedis.hget(obj,"Title") +
+//                      "Rental Date: "+ jedis.hget(obj,"RentalDate"));
 //
-//                System.out.println(jedis.hget(obj,"Title") + "  Rental Date: "+ jedis.hget(obj,"RentalDate"));
+//                System.out.println(jedis.hget(obj,"Title") +
+//                      "Rental Date: "+ jedis.hget(obj,"RentalDate"));
 //            }
 //        });
 //
@@ -149,6 +151,26 @@ public class AppHib {
 //            }
 //        });
 //        System.out.println("El staff tiene: " + count + "en ingles!");
+
+
+//        11)
+
+        jedis.keys("*").stream().forEach(obj ->{
+
+//            System.out.println(jedis.hget(obj,"Language"));
+//            System.out.println(jedis.hget(obj,"Rating"));
+
+            if(jedis.hget(obj,"Language").equals("English") &&
+                    jedis.hget(obj,"Rating").equals("G")){
+
+                jedis.hset("*","Language","Spanish");
+
+            }
+            System.out.println(jedis.hget(obj,"Language"));
+
+
+        });
+
 
 
 //        13)
