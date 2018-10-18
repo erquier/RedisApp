@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.redis_RedisApp_jar_1.0.1PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.redis.entitys.Country</class>
+    <class>com.redis.entitys.NicerButSlowerFilmList</class>
+    <class>com.redis.entitys.Product</class>
+    <class>com.redis.entitys.City</class>
+    <class>com.redis.entitys.FilmText</class>
+    <class>com.redis.entitys.Language</class>
+    <class>com.redis.entitys.FilmActor</class>
+    <class>com.redis.entitys.Address</class>
+    <class>com.redis.entitys.Category</class>
+    <class>com.redis.entitys.StaffList</class>
+    <class>com.redis.entitys.Inventory</class>
+    <class>com.redis.entitys.FilmList</class>
+    <class>com.redis.entitys.Customer</class>
+    <class>com.redis.entitys.Rental</class>
+    <class>com.redis.entitys.Actor</class>
+    <class>com.redis.entitys.Payment</class>
+    <class>com.redis.entitys.CustomerList</class>
+    <class>com.redis.entitys.Film</class>
+    <class>com.redis.entitys.Store</class>
+    <class>com.redis.entitys.FilmCategory</class>
+    <class>com.redis.entitys.Staff</class>
+    <class>com.redis.entitys.SalesByFilmCategory</class>
+    <class>com.redis.entitys.SalesByStore</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="0410"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="542d1798-424d-426c-91f3-2536b2737f4a">
+      <imported>true</imported>
+      <configured-by-url>true</configured-by-url>
+      <remarks>Hibernate
+
+/home/erquier/Downloads/RedisApp-master/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>org.gjt.mm.mysql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=convertToNull</jdbc-url>
+    </data-source>
+  </component>
+</project>
