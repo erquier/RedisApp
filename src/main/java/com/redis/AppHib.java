@@ -150,6 +150,8 @@ public class AppHib {
 //        });
 //        System.out.println("El staff tiene: " + count + "en ingles!");
 
+
+//        13)
 //        jedis.keys("*").stream().forEach(obj ->{
 //            if(jedis.hget(obj, "RentalDate") == null){
 //                count++;
@@ -158,6 +160,7 @@ public class AppHib {
 //        });
 //        System.out.println("Cuantas pelis no se han rentado?: " + count);
 
+//        14)
 //        jedis.keys("*").stream().forEach(obj ->{
 //
 //            jedis.del("JEOPARDY_ENCINO", "MOURNING_PURPLE", "FRONTIER_CABIN", "GONE_TROUBLE");
@@ -169,6 +172,7 @@ public class AppHib {
 //        });
 //        System.out.println("Peliculas restantes en SpecialFeatures: " + count);
 
+//        15)
 //        jedis.keys("*").stream().forEach(obj ->{
 //            if(jedis.hget(obj,"SpecialFeatures").equals("Commentaries")){
 //                count++;
